@@ -1,0 +1,78 @@
+                                                           /* Стилі для Персонажів Гри */
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.character-card {
+    width: 100%;
+    max-width: 360px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.character-image-placeholder {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.character-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.character-role,
+.character-details {
+    margin: 5px 0;
+}
+
+.char-jason {
+    border-left: 5px solid #4a8d7c;
+}
+
+.char-jason .card-title-icon,
+.char-jason .card-title {
+    color: #4a8d7c;
+}
+
+.char-vaas {
+    border-left: 5px solid #c75e54;
+}
+
+.char-vaas .card-title-icon,
+.char-vaas .card-title {
+    color: #c75e54;
+}
+
+.char-citra {
+    border-left: 5px solid #e0a95b;
+}
+
+.char-citra .card-title-icon,
+.char-citra .card-title {
+    color: #e0a95b;
+}
+
+.char-hoyt {
+    border-left: 5px solid #a33b3b;
+}
+
+.char-hoyt .card-title-icon,
+.char-hoyt .card-title {
+    color: #a33b3b;
+}

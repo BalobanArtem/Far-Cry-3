@@ -1,0 +1,224 @@
+                                        /* Загальні стилі для секцій, інформаційних сіток (Grid) та базових карток. */
+section {
+    background: rgba(23, 40, 40, 0.95);
+    padding: 60px 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    border: 1px solid #1d594b;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    scroll-margin-top: 90px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+section:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+section:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+    border-color: #4a8d7c;
+}
+
+section h1 {
+    font-size: 42px;
+    color: #e0a95b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(224, 169, 91, 0.5);
+}
+
+section h2 {
+    font-size: 32px;
+    color: #e0a95b;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #b4c9c7;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background: rgba(12, 18, 18, 0.95);
+    padding: 30px 25px;
+    border-radius: 8px;
+    border: 1px solid #1d594b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.info-card:hover {
+    border-color: #4a8d7c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.info-card-full-width-bg {
+    grid-column: span 2;
+    background: rgba(23, 40, 40, 0.98);
+}
+
+.card-title-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.eco-title .card-title {
+    color: #4a8d7c;
+}
+
+.history-title .card-title {
+    color: #e0a95b;
+}
+
+.danger-title .card-title {
+    color: #c75e54;
+}
+
+.about-grid-title {
+    font-size: 28px;
+    color: #4a8d7c;
+    margin-bottom: 25px;
+}
+
+.system-requirements-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.system-requirements-list li {
+    color: #4a8d7c;
+}
+
+.system-requirements-heading {
+    margin-top: 30px;
+    color: #b4c9c7;
+    font-size: 18px;
+}
+
+.btn-margin-top {
+    margin-top: 20px;
+}
+
+.btn-register-margin-top {
+    margin-top: 15px;
+}
+
+.section-title-margin {
+    margin-bottom: 35px;
+}
+
+.gameplay-text-margin {
+    margin-bottom: 25px;
+}
+
+.paragraph-margin-top {
+    margin-top: 10px;
+}
+
+#home {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(29, 89, 75, 0.3), rgba(23, 40, 40, 0.95));
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-origin: center;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 40px 20px;
+    }
+
+    section h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}

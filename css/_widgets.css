@@ -1,0 +1,75 @@
+                                                        /* // Стилі для віджетів (годинник, таймер) */
+.home-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px dashed rgba(74, 141, 124, 0.5);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.widget {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #1d594b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    flex-basis: 45%;
+    min-width: 280px;
+    transition: all 0.3s ease;
+}
+
+.widget:hover {
+    border-color: #e0a95b;
+    transform: translateY(-3px);
+}
+
+.widget-title {
+    color: #b4c9c7;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.clock-display,
+.timer-display {
+    font-family: 'Consolas', monospace;
+    font-size: 32px;
+    font-weight: 900;
+    text-shadow: none;
+    background: #080808;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 2px solid;
+    display: block;
+    text-align: center;
+}
+
+.timer-display {
+    color: #c75e54;
+    border-color: #c75e54;
+}
+
+.clock-display {
+    color: #4a8d7c;
+    border-color: #4a8d7c;
+}
+
+@media (max-width: 480px) {
+    .home-widgets {
+        flex-direction: column;
+    }
+
+    .widget {
+        flex-basis: 100%;
+    }
+
+    .clock-display,
+    .timer-display {
+        font-size: 24px;
+    }
+}

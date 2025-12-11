@@ -1,0 +1,59 @@
+                                                       /* Кнопки */
+.btn {
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #1d594b, #4a8d7c);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(74, 141, 124, 0.5);
+}
+
+.btn-logout {
+    background: linear-gradient(135deg, #a33b3b, #c75e54);
+}
+
+.btn-logout:hover {
+    box-shadow: 0 6px 15px rgba(199, 94, 84, 0.5);
+}
+
+.btn-register {
+    background: linear-gradient(135deg, #a33b3b, #c75e54);
+}
+
+.btn-register:hover {
+    box-shadow: 0 6px 15px rgba(199, 94, 84, 0.5);
+}
+
+                                                     /* Бейджи ролей */
+.role-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.role-admin {
+    background: #c75e54;
+    color: white;
+    box-shadow: 0 0 10px rgba(199, 94, 84, 0.5);
+}
+
+.role-user {
+    background: #4a8d7c;
+    color: white;
+    box-shadow: 0 0 10px rgba(74, 141, 124, 0.5);
+}

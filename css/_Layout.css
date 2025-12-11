@@ -1,0 +1,65 @@
+                                          /* // Стилі структури (body, container, footer, responsive/media queries) */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/forest.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 90px auto 40px;
+    padding: 0 30px;
+}
+
+main {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background: rgba(15, 23, 23, 0.98);
+    padding: 30px;
+    border-top: 2px solid #1d594b;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #4a8d7c;
+    font-size: 13px;
+}
+
+.footer-trademark {
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+    .header-wrapper {
+        padding: 0 15px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,159 @@
+                                                    /* // Стилі для форм авторизації/реєстрації */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(23, 40, 40, 0.98);
+    padding: 45px;
+    border-radius: 15px;
+    border: 2px solid #1d594b;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    animation: zoomIn 0.5s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.auth-box h2 {
+    color: #e0a95b;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.auth-box input,
+.auth-box select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #1d594b;
+    background: rgba(0, 0, 0, 0.5);
+    color: #b4c9c7;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.auth-box select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%234a8d7c' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+}
+
+.auth-box select option {
+    background: #0f1717;
+    color: #b4c9c7;
+    padding: 10px;
+}
+
+.auth-box input:focus,
+.auth-box select:focus {
+    outline: none;
+    border-color: #4a8d7c;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(74, 141, 124, 0.3);
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #a33b3b, #c75e54);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.auth-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(199, 94, 84, 0.5);
+}
+
+.auth-box a {
+    display: block;
+    margin-top: 15px;
+    color: #4a8d7c;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.auth-box a:hover {
+    color: #e0a95b;
+}
+.error {
+    background: rgba(199, 94, 84, 0.2);
+    color: #c75e54;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c75e54;
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.success {
+    background: rgba(74, 141, 124, 0.2);
+    color: #4a8d7c;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #4a8d7c;
+    animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
