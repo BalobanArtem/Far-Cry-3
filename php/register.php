@@ -81,14 +81,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body class="auth-page">
 
     <div class="auth-box">
-        <h2>📝 Реєстрація</h2>
+        <h2> Реєстрація</h2>
 
         <?php if ($error): ?>
-            <div class="error">❌ <?= htmlspecialchars($error) ?></div>
+            <div class="error"> <?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
 
         <?php if ($success): ?>
-            <div class="success">✅ <?= htmlspecialchars($success) ?></div>
+            <div class="success"> <?= htmlspecialchars($success) ?></div>
         <?php endif; ?>
 
         <form method="post">
@@ -104,10 +104,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <select name="gender">
                 <option value="male" <?= ($_POST['gender'] ?? 'male') === 'male' ? 'selected' : '' ?>>
-                    👨 Чоловік
+                     Чоловік
                 </option>
                 <option value="female" <?= ($_POST['gender'] ?? '') === 'female' ? 'selected' : '' ?>>
-                    👩 Жінка
+                     Жінка
                 </option>
             </select>
 

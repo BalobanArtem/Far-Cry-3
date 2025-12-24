@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Активне меню та плавний скрол
+  // Активне меню 
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", function (e) {
       e.preventDefault();

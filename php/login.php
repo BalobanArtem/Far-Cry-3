@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="jsError" class="error" style="display:none;"></div>
 
     <?php if ($error): ?>
-        <div class="error">❌ <?= htmlspecialchars($error) ?></div>
+        <div class="error"> <?= htmlspecialchars($error) ?></div>
     <?php endif; ?>
 
     <form method="POST" id="loginForm">
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="../index.php">← Повернутися на головну</a>
 
     <div style="background: rgba(224, 169, 91, 0.1); border: 1px solid #e0a95b; color: #e0a95b; padding: 15px; border-radius: 5px; margin-top: 20px; text-align: center; font-size: 13px;">
-        💡 <strong>Для тестування:</strong><br>
+         <strong>Для тестування:</strong><br>
         Адмін: <code>admin</code> / <code>admin123</code>
     </div>
 </div>

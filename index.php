@@ -49,7 +49,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                     <div class="header-actions">
                         <?php if ($isLoggedIn): ?>
                             <span class="user-name">
-                                👤 <?= htmlspecialchars($currentUser['login']) ?>
+                                 <?= htmlspecialchars($currentUser['login']) ?>
                             </span>
 
                             <?php if (isAdmin()): ?>
@@ -80,11 +80,11 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
 
                 <div class="home-widgets">
                     <div id="timerWidget" class="widget timer-widget">
-                        <p class="widget-title">🔥 До виходу Far Cry 3 (10-та річниця)</p>
+                        <p class="widget-title"> До виходу Far Cry 3 (10-та річниця)</p>
                         <div id="countdown" class="timer-display"></div>
                     </div>
                     <div id="clockWidget" class="widget clock-widget">
-                        <p class="widget-title">⏳ Час на Островах Рук</p>
+                        <p class="widget-title"> Час на Островах Рук</p>
                         <div id="digitalClock" class="clock-display"></div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                     </div>
 
                     <div class="info-card info-card-full-width-bg">
-                        <h2 class="about-grid-title">🌴 ОСТРІВ ROOK - ТРОПІЧНИЙ РАЙ АБО ПЕКЛО?</h2>
+                        <h2 class="about-grid-title"> ОСТРІВ ROOK - ТРОПІЧНИЙ РАЙ АБО ПЕКЛО?</h2>
 
                         <div class="info-grid">
                             <div class="info-card eco-title">
@@ -126,14 +126,14 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                             </div>
 
                             <div class="info-card history-title">
-                                <div class="card-title-icon">🏛️</div>
+                                <div class="card-title-icon"></div>
                                 <h3 class="card-title">ІСТОРІЯ</h3>
                                 <p class="character-details">Давні храми племені Ракьят, японські бункери часів Другої
                                     світової, покинуті піратські бази.</p>
                             </div>
 
                             <div class="info-card danger-title">
-                                <div class="card-title-icon">⚠️</div>
+                                <div class="card-title-icon"></div>
                                 <h3 class="card-title">НЕБЕЗПЕКИ</h3>
                                 <p class="character-details">Піратські патрулі, мінні поля, хижаки в джунглях. Кожен
                                     крок може стати останнім для необережного мандрівника.</p>
@@ -145,7 +145,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
 
 
             <section id="gameplay">
-                <h2 class="gameplay-text-margin">🎮 ГЕЙМПЛЕЙ</h2>
+                <h2 class="gameplay-text-margin"> ГЕЙМПЛЕЙ</h2>
                 <p>Відкритий світ з безліччю можливостей:</p>
 
                 <div class="features-grid info-grid">
@@ -189,7 +189,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
             </section>
 
             <section id="characters">
-                <h2 class="section-title-margin">👹 ГОЛОВНІ ПЕРСОНАЖІ</h2>
+                <h2 class="section-title-margin"> ГОЛОВНІ ПЕРСОНАЖІ</h2>
 
                 <div class="characters-grid">
 
@@ -209,7 +209,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                         <div class="character-image-placeholder">
                             <img src="img/vaas.jpg" alt="Ваас Монтенегро" class="character-photo">
                         </div>
-                        <div class="card-title-icon">💀</div>
+                        <div class="card-title-icon"></div>
                         <h3 class="card-title">ВААС МОНТЕНЕГРО</h3>
                         <p class="character-role">АНТАГОНІСТ</p>
                         <p class="character-details">Безумний лідер піратів. Непередбачуваний психопат з філософськими
@@ -221,7 +221,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                         <div class="character-image-placeholder">
                             <img src="img/citra.jpg" alt="Цитра Талугмай" class="character-photo">
                         </div>
-                        <div class="card-title-icon">👑</div>
+                        <div class="card-title-icon"></div>
                         <h3 class="card-title">ЦИТРА ТАЛУГМАЙ</h3>
                         <p class="character-role">СОЮЗНИЦЯ</p>
                         <p class="character-details">Лідерка племені Ракьят. Вірить у пророцтво про воїна-визволителя і
@@ -233,7 +233,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                         <div class="character-image-placeholder">
                             <img src="img/hoyt.jpg" alt="Хойт Волкер" class="character-photo">
                         </div>
-                        <div class="card-title-icon">⚔️</div>
+                        <div class="card-title-icon"></div>
                         <h3 class="card-title">ХОЙТ ВОЛКЕР</h3>
                         <p class="character-role">ГОЛОВНИЙ ЛИХОДІЙ</p>
                         <p class="character-details">Південноафриканський наркобарон та работоргівець. Контролює
@@ -245,7 +245,7 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
             </section>
 
             <section id="gallery">
-                <h2>🖼️ Галерея</h2>
+                <h2> Галерея</h2>
 
                 <div class="gallery-grid">
                     <img src="img/forest.jpg" alt="Far Cry 3 - Rook Forest">

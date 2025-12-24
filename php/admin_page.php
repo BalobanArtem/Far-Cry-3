@@ -23,13 +23,13 @@ foreach ($users as $user) {
     <div class="container">
         <div class="page-header page-header-admin">
             <div>
-                <h1>🛡️ Панель адміністратора</h1>
+                <h1> Панель адміністратора</h1>
                 <div class="page-info">
                     Вітаємо, <strong><?= htmlspecialchars($_SESSION['login']) ?></strong>!
                 </div>
             </div>
             <div class="page-actions">
-                <a href="../index.php" class="btn">🏠 Головна</a>
+                <a href="../index.php" class="btn"> Головна</a>
                 <a href="logout.php" class="btn btn-logout">Вийти</a>
             </div>
         </div>
@@ -57,7 +57,7 @@ foreach ($users as $user) {
         </div>
         
         <div class="users-table">
-            <h2>📋 Список користувачів</h2>
+            <h2> Список користувачів</h2>
             
             <?php if (empty($users)): ?>
                 <p style="color: #8fa8a5; text-align: center; padding: 30px;">
@@ -81,7 +81,7 @@ foreach ($users as $user) {
                                 <td><?= $user['id'] ?></td>
                                 <td><?= htmlspecialchars($user['login']) ?></td>
                                 <td><?= htmlspecialchars($user['email']) ?></td>
-                                <td><?= $user['gender'] === 'male' ? '👨 Чоловік' : '👩 Жінка' ?></td>
+                                <td><?= $user['gender'] === 'male' ? ' Чоловік' : ' Жінка' ?></td>
                                 <td>
                                     <span class="role-badge role-<?= $user['role'] ?? 'user' ?>">
                                         <?= $user['role'] ?? 'user' ?>
