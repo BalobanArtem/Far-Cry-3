@@ -15,7 +15,7 @@ $currentUser = getCurrentUser();
     <div class="container">
         <div class="page-header">
             <div>
-                <h1>👤 Особистий кабінет</h1>
+                <h1> Особистий кабінет</h1>
                 <div class="page-info">
                     Вітаємо, <strong><?= htmlspecialchars($currentUser['login']) ?></strong>!
                 </div>

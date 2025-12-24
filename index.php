@@ -53,9 +53,9 @@ $currentUser = $isLoggedIn ? getCurrentUser() : null;
                             </span>
 
                             <?php if (isAdmin()): ?>
-                                <a href="php/admin_page.php" class="btn">🛡️ Адмін</a>
+                                <a href="php/admin_page.php" class="btn"> Адмін</a>
                             <?php else: ?>
-                                <a href="php/user_page.php" class="btn">👤 Профіль</a>
+                                <a href="php/user_page.php" class="btn"> Профіль</a>
                             <?php endif; ?>
 
                             <a href="php/logout.php" class="btn btn-logout">Вийти</a>
